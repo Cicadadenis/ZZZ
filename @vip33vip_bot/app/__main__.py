@@ -19,4 +19,4 @@ async def startup(dispatcher: Dispatcher):
 
 if __name__ == "__main__":
     # Start long-polling mode
-    executor.start_polling(dp, on_startup=startup, **config.get("executor"))
+    executor.start_polling(dp, on_startup=startup)
